@@ -1,0 +1,58 @@
+
+$PC:1200px;
+$mini:992px;
+$Tb:767px;
+$Mb:600px;
+$media:820px;
+
+
+
+//roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+//Playfair Display
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+//prata
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+
+
+
+
+
+
+
+
+
+body,html{
+	scroll-behavior: smooth;
+	font-family: "Roboto";
+}
+img{
+	max-width: 100%;
+}
+a{
+	color: inherit;
+	user-select: none;
+}
+///////////////////////
+
+.content{
+	margin: 0 auto;
+	max-width: 1220px;
+	padding: 0 15px;
+	@media (max-width: 600px){
+		padding: 0 10px;
+	}
+	
+}
+
+.wrapper{
+	position: relative;
+}
+
+
+
+
