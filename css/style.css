@@ -372,5 +372,13 @@ header {
           justify-content: center;
   right: 0;
   top: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.initial {
+  min-height: 200vh;
 }
 /*# sourceMappingURL=style.css.map */
