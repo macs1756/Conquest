@@ -15,7 +15,7 @@ btnBurger.addEventListener("click", item =>{
 
 const followBody = document.querySelector("#follow");
 const followCount = document.querySelector(".list__nav-follow");
-let count = 1;
+let count = 0;
 followBody.addEventListener("click", follow=>{
 	
 	let countNext = ++count;
