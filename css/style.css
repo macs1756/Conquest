@@ -407,7 +407,6 @@ header {
           flex: 0 1 41%;
   padding-right: calc(0px + 55 * ((100vw - 320px) / 850));
   padding-left: calc(0px + 87 * ((100vw - 320px) / 850));
-  padding-top: calc(20px + 214 * ((100vw - 320px) / 850));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,6 +431,8 @@ header {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 59%;
           flex: 0 1 59%;
+  padding-left: calc(0px + 80 * ((100vw - 320px) / 850));
+  padding-right: calc(0px + 80 * ((100vw - 320px) / 850));
 }
 
 .initial__title {
@@ -470,7 +471,16 @@ header {
   margin-bottom: calc(40px + 24 * ((100vw - 320px) / 850));
 }
 
+@media (max-width: 600px) {
+  .initial__p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
 .initial__btn {
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
   background: #444240;
   display: inline-block;
   color: #fff;
@@ -483,5 +493,19 @@ header {
   padding-right: calc(20px + 18 * ((100vw - 320px) / 850));
   padding-top: calc(10px + 10 * ((100vw - 320px) / 850));
   padding-bottom: calc(10px + 10 * ((100vw - 320px) / 850));
+}
+
+@media (max-width: 600px) {
+  .initial__btn {
+    margin-top: 20px;
+  }
+}
+
+@media (any-hover: hover) {
+  .initial__btn:hover {
+    background: #2f2e2c;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
 }
 /*# sourceMappingURL=style.css.map */
