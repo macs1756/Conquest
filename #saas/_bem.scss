@@ -62,4 +62,9 @@ h2{
 	color: #1B1A17;
 	line-height: 133%;
 	@include adaptiv-value(margin-bottom,38,20);
+	text-align: center;
+	@media (max-width: $Mb){
+		text-align: left;
+	}
+	
 }

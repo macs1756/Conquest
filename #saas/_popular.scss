@@ -1,0 +1,113 @@
+
+
+.popular__title {
+	@media (max-width: $Mb){
+		margin-top: 20px;
+	}
+	
+}
+
+
+
+.popular__card {
+	margin: 0 -15px;
+	display: flex;
+	@media (max-width: $Mb){
+		flex-direction: column;
+	}
+	
+}
+.popular__card-item {
+	margin: 0 15px;
+	@media (max-width: 992px){
+		margin: 0 10px;
+	}
+	@media (max-width: $Tb){
+		margin: 0 5px;
+	}
+	
+	
+	flex: 1 1 33.333%;
+
+@media (max-width: $Mb){
+	margin-bottom: 20px;
+}
+
+}
+
+
+
+.card__item{
+	@include adaptiv-value(padding-top,40,0);
+	@include adaptiv-value(padding-right,30,0);
+	@include adaptiv-value(padding-bottom,35,10);
+	@include adaptiv-value(padding-left,40,0);
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	@media (max-width: $Mb){
+		align-items: flex-start;
+	}
+	@media (max-width: $Mb){
+		border-bottom: 1px solid #EAE3D4;
+	}
+		
+}
+
+.card__item-title {
+	font-family: "Playfair Display";
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: rgba(27, 26, 23, 0.82);
+margin-bottom: 10px;
+}
+
+.card__item-price {
+	font-family: 'Prata';
+font-size: 12px;
+color: rgba(27, 26, 23, 0.82);
+position: relative;
+
+&:before{
+	font-family: "Roboto";
+	content: "₽";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -12px;
+
+}
+
+}
+.popular__item-product {
+		align-self: center;
+}
+.popular__item-btn {
+	padding-left: 40px;
+	position: relative;
+	&:after{content: '';
+		display: block;
+		width: 30px;
+		height: 1px;
+		background-color: #8B8371;
+		position: absolute;
+		top: 50%;
+		left: 0;
+	}
+	a{
+		@media(any-hover: hover){
+			&:hover{
+			text-decoration: underline;
+		}
+	}	
+
+
+	@include adaptiv-value(font-size,16,14);
+	color: #1B1A17;
+	}
+	
+}
+

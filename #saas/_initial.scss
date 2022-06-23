@@ -110,6 +110,7 @@ justify-content: center;
 	position: relative;
 	z-index: 2;
 	&::after{
+	
 		content: "10100 ₽";
 		position: absolute;
 		top: 20%;
