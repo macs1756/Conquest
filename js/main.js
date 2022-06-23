@@ -21,3 +21,10 @@ followBody.addEventListener("click", follow=>{
 	let countNext = ++count;
 	followCount.innerHTML = countNext ;
 });
+
+
+
+new Swiper(".swiper",{
+	slidesPerView: 1,
+	loop: true,
+});
