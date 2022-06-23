@@ -56,6 +56,7 @@
 }
 
 .card__item-title {
+	text-transform: uppercase;
 	font-family: "Playfair Display";
 font-weight: 700;
 font-size: 14px;
@@ -84,7 +85,17 @@ position: relative;
 }
 .popular__item-product {
 		align-self: center;
+		background-color: red;
+		padding: 1px;
+		border-radius: 50%;
+		background: linear-gradient(89.63deg,rgba(226, 208, 196, 0)  0.3%, #E2D0C4 99.67%);
+
 }
+.popular__item-product-img{
+	border-radius: 50%;
+}
+
+
 .popular__item-btn {
 	padding-left: 40px;
 	position: relative;
