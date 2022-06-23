@@ -31,6 +31,8 @@
 	flex: 0 1 59%;
 	@include adaptiv-value(padding-left,80,0);
 	@include adaptiv-value(padding-right,80,0);	
+	border:  solid #000;
+	
 }
 
 
@@ -73,17 +75,20 @@ color: rgba(27, 26, 23, 0.82);
 .initial__btn {
 	transition: all 0.1s linear;
 	background: #444240;
-	display: inline-block;
+
 	color: #fff;
 	font-style: normal;
 font-weight: 500;
 font-size: 12px;
 letter-spacing: 0.05em;
 text-transform: uppercase;
-@include adaptiv-value(padding-left,38,20);
-@include adaptiv-value(padding-right,38,20);
-@include adaptiv-value(padding-top,20,10);
-@include adaptiv-value(padding-bottom,20,10);
+display: flex;
+align-items: center;
+justify-content: center;
+@include adaptiv-value(width,205,168);
+@include adaptiv-value(height,64,44);
+
+
 @media (max-width: $Mb){
 	margin-top: 20px;
 }
@@ -92,7 +97,61 @@ text-transform: uppercase;
 	background: #2f2e2c;
 	transition: all 0.3s linear;
 }}
-
 }
 
+
+
+
+
+.initial__img{
+	@include adaptiv-value(font-size,16,10);
+@media (max-width: $Mb){
+	font-size: 12px;
+}
+
+	
+	color: #1B1A17;
+	display: block;
+	border: 1px solid #000;
+	position: relative;
+	z-index: 2;
+	&::after{
+		content: "10100 ₽";
+		position: absolute;
+		top: 20%;
+		left: 10%;
+
+		z-index: 1;
+		display: block;
+		background: url(../img/initial__line.jpg) 100% center no-repeat;
+		padding-right: 55px;
+		@media (max-width: 700px){
+			left: 5%;
+		}
+		
+	}
+	&::before{
+		content: "28 мм диаметр";
+		position: absolute;
+		bottom: 20%;
+		right: 5%;
+		z-index: 200;
+		display: block;
+		background: url(../img/initial__line.jpg) 0% center no-repeat;
+		padding-left: 55px;
+		@media (max-width: 700px){
+			right: 0;
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+ 
 
