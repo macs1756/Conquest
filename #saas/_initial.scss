@@ -1,7 +1,6 @@
 
 
 .initial{
-		border-top: 1px solid red;
 		@include adaptiv-value(margin-top,85,60);
 		display: flex;
 		justify-content: space-between;
@@ -31,8 +30,6 @@
 	flex: 0 1 59%;
 	@include adaptiv-value(padding-left,80,0);
 	@include adaptiv-value(padding-right,80,0);	
-	border:  solid #000;
-	
 }
 
 
@@ -108,11 +105,8 @@ justify-content: center;
 @media (max-width: $Mb){
 	font-size: 12px;
 }
-
-	
 	color: #1B1A17;
 	display: block;
-	border: 1px solid #000;
 	position: relative;
 	z-index: 2;
 	&::after{
@@ -145,6 +139,33 @@ justify-content: center;
 		
 	}
 	
+}
+
+.initial__img{
+	overflow: hidden;
+	span{
+		&:after{
+			content: '';
+			background: url(../img/initialBg.png)  no-repeat;
+			position: absolute;
+			top: 5%;
+			left: 50%;
+			z-index: -1;
+			transform: translateX(-50%);	
+			display: block;		
+			@include adaptiv-value(width,500,80);
+			@include adaptiv-value(height,850,100);
+		@media (max-width: $Mb){
+		
+			@include adaptiv-value(width,400,250);
+			@include adaptiv-value(height,900,600);
+		
+			
+		}
+		
+		}
+		
+	}
 }
 
 

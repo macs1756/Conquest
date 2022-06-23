@@ -56,3 +56,10 @@ a{
 
 
 
+h2{
+	@include adaptiv-value(font-size,32,20);
+	font-family: 'Playfair Display';
+	color: #1B1A17;
+	line-height: 133%;
+	@include adaptiv-value(margin-bottom,38,20);
+}
