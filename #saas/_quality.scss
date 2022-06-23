@@ -10,7 +10,10 @@
 .swiper-slide{
 	height: auto;
 	width: auto;
-	padding: 50px 0;
+	@include adaptiv-value(padding-top,50,30);
+
+	
+	
 	display: flex;
 	justify-content: space-between;
  align-items: center;
@@ -52,25 +55,32 @@ img{
 .quality__slide-p{
 	padding-right: 24%;
 		@include adaptiv-value(margin-bottom,45,0);
+		@media (max-width: 420px){
+			padding-right: 0;
+			text-align: center;
+		}
+		
 }
 
 
 .quality__slide-title{
 	text-align: left;
+	@media (max-width: 420px){
+		text-align: center;
 	
 	
 	
 }
-
+}
 .quality__slide-btn{
+	margin-top: 10px;
 	display: block;
 	background: #D4B098;
 	font-weight: 500;
-font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.05em;
-
-@include adaptiv-value(width,204,128);
+@include adaptiv-value(font-size,12,10);
+@include adaptiv-value(width,204,135);
 @include adaptiv-value(height,64,41);
 display: flex;
 align-items: center;
@@ -79,10 +89,39 @@ justify-content: center;
 }
 
 
-
-
 .base-null{
  display: flex;
  align-items: center;
  justify-content: center;
+
+}
+
+
+
+
+.slider__control {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	min-height: 50px;
+	
+}
+.slider__control-prev {
+	padding: 10px;
+}
+.slider__control-fraction {
+}
+.slider__control-next {
+	transform: rotate(180deg);
+	padding: 10px;
+}
+
+
+.slider__control-fraction{
+	width: auto;
+	font-family: 'Prata';
+	font-size: 12px;
+	line-height: 16px;
+	color: rgba(27, 26, 23, 0.82);
 }

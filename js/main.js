@@ -3,6 +3,10 @@
 const btnBurger = document.querySelector(".header__burger");
 const contentBurger = document.querySelector(".burger__active");
 
+
+
+
+
 btnBurger.addEventListener("click", item =>{
 		btnBurger.classList.toggle("header__burger_close");
 		contentBurger.classList.toggle("burger__open");
@@ -27,4 +31,23 @@ followBody.addEventListener("click", follow=>{
 new Swiper(".swiper",{
 	slidesPerView: 1,
 	loop: true,
+	navigation:{
+		nextEl: ".slider__control-next",
+		prevEl: ".slider__control-prev",
+	},
+pagination:{
+	type: "fraction",
+	el: ".slider__control-fraction",
+
+
+
+
+renderFraction: function (currentClass, totalClass){
+	return '0<span class='+ currentClass +'></span>'
+}
+},
 });
+
+
+
+

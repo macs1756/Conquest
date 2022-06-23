@@ -1,8 +1,13 @@
 
 
 .popular__title {
+	text-align: center;
 	@media (max-width: $Mb){
 		margin-top: 20px;
+		text-align: left;
+	}
+	@media (max-width: 420px){
+		text-align: center;
 	}
 	
 }
@@ -56,6 +61,7 @@
 }
 
 .card__item-title {
+
 	text-transform: uppercase;
 	font-family: "Playfair Display";
 font-weight: 700;
