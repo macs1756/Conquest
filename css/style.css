@@ -1176,7 +1176,6 @@ footer button {
 }
 
 .footer__net-item {
-  max-width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1195,6 +1194,7 @@ footer button {
 @media (max-width: 420px) {
   .footer__net-item:nth-child(1) {
     margin: 0 auto;
+    max-width: 130px;
   }
 }
 
@@ -1212,12 +1212,14 @@ footer button {
   }
 }
 
-.footer_active {
-  padding-top: 10px;
-  display: block;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+@media (max-width: 420px) {
+  .footer_active {
+    padding-top: 10px;
+    display: block;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
 }
 /*# sourceMappingURL=style.css.map */

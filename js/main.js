@@ -52,6 +52,7 @@ renderFraction: function (currentClass, totalClass){
 
 
 
+
 const bb = document.querySelectorAll(".btn__our-company");
 
 bb.forEach(item=>{
@@ -60,4 +61,9 @@ bb.forEach(item=>{
 		next.classList.toggle("footer_active");
 	});
 });
+
+
+
+	
+ 
 
