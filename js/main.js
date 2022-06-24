@@ -51,3 +51,13 @@ renderFraction: function (currentClass, totalClass){
 
 
 
+
+const bb = document.querySelectorAll(".btn__our-company");
+
+bb.forEach(item=>{
+	item.addEventListener("click", plusClass=>{
+		const next = item.nextElementSibling;
+		next.classList.toggle("footer_active");
+	});
+});
+

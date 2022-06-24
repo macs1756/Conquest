@@ -7,9 +7,17 @@ footer{
 	@include adaptiv-value(padding-right,85,0);
 	font-size: 12px;
 	color: rgba(255, 255, 255, 0.75);
+	li{
+		@media(any-hover: hover){
+			&:hover{
+text-decoration: underline;
+			}}
+	}
 	li:not(:last-child){
-			@include adaptiv-value(margin-bottom,15,7);
+			@include adaptiv-value(margin-bottom,15,10);
 			line-height: 115%;
+			
+			
 	}
 	button{
 		text-align: left;
@@ -21,12 +29,17 @@ footer{
 	text-transform: uppercase;
 	color: #FFFFFF;
 	background-color: transparent;
-	@include adaptiv-value(margin-bottom,33,20);
+	@include adaptiv-value(margin-bottom,23,10);
 	
 	}
 	@media (max-width: $Tb){
 		padding-left: 0;
 		padding-right: 0;
+	}
+	@media (max-width: 420px){
+		button{
+			margin-bottom: 5px;
+		}
 	}
 	
 }
@@ -59,7 +72,10 @@ footer{
 	justify-content: flex-start;
 }
 .footer__net-item:nth-child(1){
-	padding-left: 20px;
+	@media (max-width: 420px){
+		margin: 0 auto;
+	}
+	
 }
 
 
@@ -68,4 +84,30 @@ footer{
 
 .footer__adress-logo {
 	margin-bottom: 20px;
+}
+
+
+
+
+
+
+.list__our-company{
+	
+	@media (max-width: 420px){
+		transition: all 0.3s linear;
+		display: none;
+		transform: scaleY(0);
+		
+	}
+	
+}
+
+
+
+.footer_active{
+	padding-top: 10px;
+	display: block;
+	transform: scaleY(1);
+	transition: all 0.3s linear;	
+	
 }
