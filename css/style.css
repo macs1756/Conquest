@@ -1118,6 +1118,10 @@ footer li:not(:last-child) {
 }
 
 footer button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   text-align: left;
   line-height: 114%;
   padding-top: 10px;
