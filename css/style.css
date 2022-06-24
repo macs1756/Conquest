@@ -1053,6 +1053,13 @@ header {
   grid-row-gap: 10px;
 }
 
+@media (max-width: 600px) {
+  .news__photo-wr {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+}
+
 .grid__item-1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
@@ -1091,5 +1098,89 @@ header {
 
 footer {
   background: #444240;
+  padding-top: calc(20px + 45 * ((100vw - 320px) / 850));
+  padding-bottom: calc(20px + 45 * ((100vw - 320px) / 850));
+  padding-left: calc(0px + 85 * ((100vw - 320px) / 850));
+  padding-right: calc(0px + 85 * ((100vw - 320px) / 850));
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+footer li:not(:last-child) {
+  margin-bottom: calc(7px + 8 * ((100vw - 320px) / 850));
+  line-height: 115%;
+}
+
+footer button {
+  text-align: left;
+  line-height: 114%;
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: transparent;
+  margin-bottom: calc(20px + 13 * ((100vw - 320px) / 850));
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.footer__net {
+  min-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+}
+
+@media (max-width: 767px) {
+  .footer__net {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-row-gap: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer__net {
+    display: block;
+  }
+}
+
+.footer__net-item {
+  max-width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__net-item:nth-child(1) {
+  padding-left: 20px;
+}
+
+.footer__adress-logo {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -92,6 +92,11 @@ grid-template-columns: 39% 59%;
 grid-template-rows: repeat(2, 50%);
 grid-column-gap: 10px;
 grid-row-gap: 10px;
+@media (max-width: $Mb){
+	grid-column-gap: 5px;
+grid-row-gap: 5px;
+}
+
 	}
 	
 

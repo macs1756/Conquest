@@ -1,4 +1,71 @@
 
 footer{
 	background: #444240;
+	@include adaptiv-value(padding-top,65,20);
+	@include adaptiv-value(padding-bottom,65,20);
+	@include adaptiv-value(padding-left,85,0);
+	@include adaptiv-value(padding-right,85,0);
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.75);
+	li:not(:last-child){
+			@include adaptiv-value(margin-bottom,15,7);
+			line-height: 115%;
+	}
+	button{
+		text-align: left;
+		line-height: 114%;
+		padding-top: 10px;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: transparent;
+	@include adaptiv-value(margin-bottom,33,20);
+	
+	}
+	@media (max-width: $Tb){
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+}
+
+
+.footer__net {
+		min-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 15px;
+		grid-row-gap: 0px;
+		@media (max-width: $Tb){
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: 1fr 1fr;
+			grid-row-gap: 15px;
+		}
+		@media (max-width: 420px){
+			display: block;
+		}
+				
+}
+
+
+.footer__net-item {	
+	max-width: 180px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.footer__net-item:nth-child(1){
+	padding-left: 20px;
+}
+
+
+
+
+
+.footer__adress-logo {
+	margin-bottom: 20px;
 }
